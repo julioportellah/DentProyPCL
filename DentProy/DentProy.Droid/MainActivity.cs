@@ -7,6 +7,9 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using System.Collections.Generic;
+using DentProyPCL;
+using DentProy.BusinessLayer;
+
 
 namespace DentProy.Droid
 {
@@ -25,13 +28,17 @@ namespace DentProy.Droid
 			// Get our button from the layout resource,
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
-            
-            var pieza1 = new DentProyPCL.BusinessLayer.Pieza(11) { };
-            Toast toast = Toast.MakeText(this, "This is a test..."+pieza1.Impactacion, ToastLength.Short);
+            //DentProyPCL.BusinessLayer.Pieza test = new DentProyPCL.BusinessLayer.Pieza(11);
+            var pieza11 = new Pieza(11);
+            //var pieza1 = new DentProy.BusinessLayer DentProyPCL.BusinessLayer.Pieza(11) { };
+            Toast toast = Toast.MakeText(this, "This is a test..."+pieza11.Impactacion, ToastLength.Short);
+            //Toast toast = Toast.MakeText(this, "This is a test..." , ToastLength.Short);
 
             button.Click += delegate {
 				button.Text = string.Format ("{0} clicks!", count++);
                 toast.Show();
+                Intent intent = new Intent(this.ApplicationContext, typeof(OdontogramaActivity));
+                StartActivity(intent);
 			};
             //Definiendo superficies dentales
             //var pieza11 = new DentProyPCL.BusinessLayer.Pieza() {

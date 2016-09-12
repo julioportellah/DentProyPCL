@@ -15,6 +15,5 @@ namespace DentProyPCL.BusinessLayer
         public bool Fusion { get; set; }
         public bool SuperNumerario { get; set; }
         public bool Transposicion { get; set; }
-        //Fución,
     }
 }

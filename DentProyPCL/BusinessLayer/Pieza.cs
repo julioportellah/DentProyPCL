@@ -9,7 +9,7 @@ namespace DentProyPCL.BusinessLayer
     public class Pieza:Diente
     {
         public Pieza(int numero) {
-            this.Numero = numero;
+            Numero = numero;
             List<int> piezas5 = new List<int>(new[] {16,17,26,27,37,47,54,55,64,65,74,75,84,85});
             List<int> piezas6 = new List<int>(new[] {14,15,24,25,34,35,44,45,46,36 });
             List<int> piezas7 = new List<int>(new[] { 18,28,38,48});

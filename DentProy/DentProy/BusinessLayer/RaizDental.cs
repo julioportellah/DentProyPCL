@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace DentProy.BusinessLayer
 {
-    public class SuperficieDental
+    public class RaizDental
     {
         public int Numero { get; set; }
-        
+
         public bool Caries { get; set; }
 
-        public string Restauracion { get; set; }//NON,TEMP,AM,R,IV,IM,IE
-
-
-
+        public string TratamientoPulpar { get; set; }//TC,PC,PP,NON
     }
 }

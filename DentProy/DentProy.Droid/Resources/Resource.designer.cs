@@ -63,6 +63,9 @@ namespace DentProy.Droid
 			// aapt resource value: 0x7f050000
 			public const int myButton = 2131034112;
 			
+			// aapt resource value: 0x7f050001
+			public const int textView1 = 2131034113;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -79,6 +82,9 @@ namespace DentProy.Droid
 			// aapt resource value: 0x7f030000
 			public const int Main = 2130903040;
 			
+			// aapt resource value: 0x7f030001
+			public const int Odontograma = 2130903041;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -93,7 +99,10 @@ namespace DentProy.Droid
 		{
 			
 			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
+			public const int LayoutActivity = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int app_name = 2130968578;
 			
 			// aapt resource value: 0x7f040000
 			public const int hello = 2130968576;

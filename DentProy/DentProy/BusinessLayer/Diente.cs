@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DentProyPCL.BusinessLayer
+namespace DentProy.BusinessLayer
 {
     public class Diente
     {

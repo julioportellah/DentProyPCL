@@ -33,13 +33,17 @@
   <ItemGroup>
     <Compile Include="BusinessLayer\Diente.cs" />
     <Compile Include="BusinessLayer\DuplaDental.cs" />
+    <Compile Include="BusinessLayer\FracturaDental.cs" />
     <Compile Include="BusinessLayer\Paciente.cs" />
     <Compile Include="BusinessLayer\Persona.cs" />
     <Compile Include="BusinessLayer\Pieza.cs" />
+    <Compile Include="BusinessLayer\RaizDental.cs" />
     <Compile Include="BusinessLayer\SuperficieDental.cs" />
     <Compile Include="BusinessLayer\Usuario.cs" />
-    <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

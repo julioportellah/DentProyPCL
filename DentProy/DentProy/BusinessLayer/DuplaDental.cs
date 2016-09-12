@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DentProyPCL.BusinessLayer
+namespace DentProy.BusinessLayer
 {
     public class DuplaDental
     {
@@ -15,6 +15,5 @@ namespace DentProyPCL.BusinessLayer
         public bool Fusion { get; set; }
         public bool SuperNumerario { get; set; }
         public bool Transposicion { get; set; }
-        //Fución,
     }
 }
