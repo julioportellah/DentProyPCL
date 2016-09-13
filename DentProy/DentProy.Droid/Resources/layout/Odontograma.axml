@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:text="@string/LayoutActivity"
-        android:layout_width="fill_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
-</LinearLayout>
+        android:hint="@string/LayoutActivity" />
+    <Button
+        android:id="@+id/pieza18"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/name"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff" />
+    <Button
+        android:id="@+id/pieza17"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/name"
+        android:background="#ffff00"
+        android:layout_toRightOf="@+id/pieza18" />
+    <Button
+        android:id="@+id/pieza16"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/name"
+        android:background="#ff0000"
+        android:layout_toRightOf="@+id/pieza17" />
+    <Button
+        android:id="@+id/pieza15"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/name"
+        android:background="#ffffff"
+        android:layout_toRightOf="@+id/pieza16" />
+    <Button
+        android:id="@+id/pieza14"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/name"
+        android:background="#ff0000"
+        android:layout_toRightOf="@+id/pieza15" />
+    <Button
+        android:id="@+id/pieza13"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/name"
+        android:background="#ffffff"
+        android:layout_toRightOf="@+id/pieza14" />
+    <Button
+        android:id="@+id/pieza12"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/name"
+        android:background="#ff0000"
+        android:layout_toRightOf="@+id/pieza13" />
+    <Button
+        android:id="@+id/pieza11"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/name"
+        android:background="#ffffff"
+        android:layout_toRightOf="@+id/pieza12" />
+</RelativeLayout>
