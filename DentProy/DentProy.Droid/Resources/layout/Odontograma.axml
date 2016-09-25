@@ -265,6 +265,7 @@
           android:id="@+id/upperTempJaw"
           android:layout_centerHorizontal="true"
           android:layout_centerInParent="true"
+          android:layout_gravity="center_horizontal"
           android:layout_below="@+id/upperJaw">
         <LinearLayout
             android:orientation="vertical"
@@ -275,76 +276,81 @@
               android:orientation="horizontal"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content">
+            <Space
+                android:id="@+id/blankspaceDienteLecheSup"
+                android:layout_width="144dp"
+                android:layout_height="40dp" />
             <Button
                 android:id="@+id/pieza55"
-                android:text="15"
+                android:text="55"
                 android:layout_width="48dp"
                 android:layout_height="60dp"
                 android:background="#ffffff"
-                android:layout_toRightOf="@+id/pieza16" />
+                android:layout_toRightOf="@+id/blankspaceDienteLecheSup"/>
             <Button
                 android:id="@+id/pieza54"
                 android:text="14"
                 android:layout_width="48dp"
                 android:layout_height="60dp"
                 android:background="#ff0000"
-                android:layout_toRightOf="@+id/pieza15" />
+                android:layout_toRightOf="@+id/pieza55" />
             <Button
                 android:id="@+id/pieza53"
                 android:text="13"
                 android:layout_width="48dp"
                 android:layout_height="60dp"
                 android:background="#ffffff"
-                android:layout_toRightOf="@+id/pieza14" />
+                android:layout_toRightOf="@+id/pieza54" />
             <Button
                 android:id="@+id/pieza52"
                 android:text="12"
                 android:layout_width="48dp"
                 android:layout_height="60dp"
                 android:background="#ff0000"
-                android:layout_toRightOf="@+idi/pieza13" />
+                android:layout_toRightOf="@+idi/pieza53" />
             <Button
                 android:id="@+id/pieza51"
                 android:text="11"
                 android:layout_width="48dp"
                 android:layout_height="60dp"
                 android:background="#ffffff"
-                android:layout_toRightOf="@+id/pieza12" />
+                android:layout_toRightOf="@+id/pieza52" />
             <Button
                 android:id="@+id/pieza61"
                 android:text="21"
                 android:layout_width="48dp"
                 android:layout_height="60dp"
                 android:background="#0000ff"
-                android:layout_toRightOf="@+id/pieza11" />
+                android:layout_below="@+id/pieza11"
+                android:layout_toRightOf="@+id/pieza51" />
             <Button
                 android:id="@+id/pieza62"
                 android:text="22"
                 android:layout_width="48dp"
                 android:layout_height="60dp"
                 android:background="#ffff00"
-                android:layout_toRightOf="@+id/pieza21" />
+                android:layout_toRightOf="@+id/pieza61" />
             <Button
                 android:id="@+id/pieza63"
                 android:text="23"
                 android:layout_width="48dp"
                 android:layout_height="60dp"
                 android:background="#ff0000"
-                android:layout_toRightOf="@+id/pieza22" />
+                android:layout_toRightOf="@+id/pieza62" />
             <Button
                 android:id="@+id/pieza64"
                 android:text="24"
                 android:layout_width="48dp"
                 android:layout_height="60dp"
                 android:background="#0000ff"
-                android:layout_toRightOf="@+id/pieza23" />
+                android:layout_toRightOf="@+id/pieza63" />
             <Button
                 android:id="@+id/pieza65"
                 android:text="25"
                 android:layout_width="48dp"
                 android:layout_height="60dp"
                 android:background="#ff0000"
-                android:layout_toRightOf="@+id/pieza24" />
+                android:layout_toRightOf="@+id/pieza64" />
           </LinearLayout>
           <LinearLayout
               android:orientation="horizontal"
@@ -353,7 +359,7 @@
               android:id="@+id/espacioEntreDentalSuperior">
             <Space
                 android:id="@+id/blankspace3"
-                android:layout_width="24dp"
+                android:layout_width="168dp"
                 android:layout_height="40dp" />
             <Button
                 android:id="@+id/espacio5554"
@@ -439,7 +445,7 @@
               android:layout_height="wrap_content">
             <Space
                 android:id="@+id/blankspace4"
-                android:layout_width="24dp"
+                android:layout_width="168dp"
                 android:layout_height="40dp" />
             <Button
                 android:id="@+id/espacio8584"
@@ -509,12 +515,17 @@
               android:orientation="horizontal"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content">
+            <Space
+                android:id="@+id/blankspaceDienteLecheInf"
+                android:layout_width="144dp"
+                android:layout_height="40dp" />
             <Button
                 android:id="@+id/pieza85"
                 android:text="15"
                 android:layout_width="48dp"
                 android:layout_height="60dp"
-                android:background="#ffffff" />
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/blankspaceDienteLecheInf"  />
             <Button
                 android:id="@+id/pieza84"
                 android:text="14"
