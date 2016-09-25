@@ -1,493 +1,832 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent"
-  android:id="@+id/mainLayer">
-  <HorizontalScrollView
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:layout_alignParentLeft="true"
-      android:id="@+id/upperJaw">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLayer">
+  <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/mouthScrollView">
     <LinearLayout
-      android:orientation="vertical"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content">
-      <LinearLayout
-        android:orientation="horizontal"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/pieza18"
-            android:text="18"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
-            android:background="#ffffff" />
-        <Button
-            android:id="@+id/pieza17"
-            android:text="17"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ffff00"
-            android:layout_toRightOf="@+id/pieza18" />
-        <Button
-            android:id="@+id/pieza16"
-            android:text="16"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/pieza17" />
-        <Button
-            android:id="@+id/pieza15"
-            android:text="15"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ffffff"
-            android:layout_toRightOf="@+id/pieza16" />
-        <Button
-            android:id="@+id/pieza14"
-            android:text="14"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/pieza15" />
-        <Button
-            android:id="@+id/pieza13"
-            android:text="13"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ffffff"
-            android:layout_toRightOf="@+id/pieza14" />
-        <Button
-            android:id="@+id/pieza12"
-            android:text="12"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/pieza13" />
-        <Button
-            android:id="@+id/pieza11"
-            android:text="11"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ffffff"
-            android:layout_toRightOf="@+id/pieza12" />
-        <Button
-            android:id="@+id/pieza21"
-            android:text="21"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/pieza11" />
-        <Button
-            android:id="@+id/pieza22"
-            android:text="22"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ffff00"
-            android:layout_toRightOf="@+id/pieza21" />
-        <Button
-            android:id="@+id/pieza23"
-            android:text="23"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/pieza22" />
-        <Button
-            android:id="@+id/pieza24"
-            android:text="24"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/pieza23" />
-        <Button
-            android:id="@+id/pieza25"
-            android:text="25"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/pieza24" />
-        <Button
-            android:id="@+id/pieza26"
-            android:text="26"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/pieza25" />
-        <Button
-            android:id="@+id/pieza27"
-            android:text="27"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/pieza26" />
-        <Button
-            android:id="@+id/pieza28"
-            android:text="28"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#000000"
-            android:layout_toRightOf="@+id/pieza27" />
-      </LinearLayout>
-      <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <Space
-            android:id="@+id/blankspace1"
-            android:layout_width="24dp"
-            android:layout_height="40dp"/>
-        <Button
-            android:id="@+id/espacio1817"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
-            android:background="#ff000f"
-            android:layout_toRightOf="@+id/blankspace1" />
-        <Button
-            android:id="@+id/espacio1716"
-            android:text="17"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ffff0f"
-            android:layout_toRightOf="@+id/espacio1817" />
-        <Button
-            android:id="@+id/espacio1615"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#000000"
-            android:layout_toRightOf="@+id/espacio1716" />
-        <Button
-            android:id="@+id/espacio1514"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ffffff"
-            android:layout_toRightOf="@+id/espacio1615" />
-        <Button
-            android:id="@+id/espacio1413"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ff0f00"
-            android:layout_toRightOf="@+id/espacio1514" />
-        <Button
-            android:id="@+id/espacio1312"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#00000f"
-            android:layout_toRightOf="@+id/espacio1413" />
-        <Button
-            android:id="@+id/espacio1211"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/espacio1312" />
-        <Button
-            android:id="@+id/espacio1121"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#000fff"
-            android:layout_toRightOf="@+id/espacio1211" />
-        <Button
-            android:id="@+id/espacio2122"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/espacio1121" />
-        <Button
-            android:id="@+id/espacio2223"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ffff00"
-            android:layout_toRightOf="@+id/espacio2122" />
-        <Button
-            android:id="@+id/espacio2324"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/espacio2223" />
-        <Button
-            android:id="@+id/espacio2425"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/espacio2324" />
-        <Button
-            android:id="@+id/espacio2526"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/espacio2425" />
-        <Button
-            android:id="@+id/espacio2627"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/espacio2526" />
-        <Button
-            android:id="@+id/espacio2728"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/espacio2627" />
-      </LinearLayout>
-    </LinearLayout>
-  </HorizontalScrollView>
-  <HorizontalScrollView
+        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:id="@+id/underJaw"
-        android:layout_below="@+id/upperJaw">
-    <LinearLayout
-      android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-      <LinearLayout
-          android:orientation="horizontal"
+        android:id="@+id/mothLinearLayout">
+      <HorizontalScrollView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_centerHorizontal="true"
+       android:id="@+id/upperJaw">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/espacioEntreDentalSuperior">
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/pieza18"
+                android:text="18"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:background="#ffffff" />
+            <Button
+                android:id="@+id/pieza17"
+                android:text="17"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffff00"
+                android:layout_toRightOf="@+id/pieza18" />
+            <Button
+                android:id="@+id/pieza16"
+                android:text="16"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza17" />
+            <Button
+                android:id="@+id/pieza15"
+                android:text="15"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/pieza16" />
+            <Button
+                android:id="@+id/pieza14"
+                android:text="14"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza15" />
+            <Button
+                android:id="@+id/pieza13"
+                android:text="13"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/pieza14" />
+            <Button
+                android:id="@+id/pieza12"
+                android:text="12"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+idi/pieza13" />
+            <Button
+                android:id="@+id/pieza11"
+                android:text="11"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/pieza12" />
+            <Button
+                android:id="@+id/pieza21"
+                android:text="21"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/pieza11" />
+            <Button
+                android:id="@+id/pieza22"
+                android:text="22"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffff00"
+                android:layout_toRightOf="@+id/pieza21" />
+            <Button
+                android:id="@+id/pieza23"
+                android:text="23"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza22" />
+            <Button
+                android:id="@+id/pieza24"
+                android:text="24"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/pieza23" />
+            <Button
+                android:id="@+id/pieza25"
+                android:text="25"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza24" />
+            <Button
+                android:id="@+id/pieza26"
+                android:text="26"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/pieza25" />
+            <Button
+                android:id="@+id/pieza27"
+                android:text="27"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza26" />
+            <Button
+                android:id="@+id/pieza28"
+                android:text="28"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#000000"
+                android:layout_toRightOf="@+id/pieza27" />
+          </LinearLayout>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/espacioEntreDentalSuperior">
+            <Space
+                android:id="@+id/blankspace1"
+                android:layout_width="24dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/espacio1817"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:background="#ff000f"
+                android:layout_toRightOf="@+id/blankspace1" />
+            <Button
+                android:id="@+id/espacio1716"
+                android:text="17"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ffff0f"
+                android:layout_toRightOf="@+id/espacio1817" />
+            <Button
+                android:id="@+id/espacio1615"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#000000"
+                android:layout_toRightOf="@+id/espacio1716" />
+            <Button
+                android:id="@+id/espacio1514"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/espacio1615" />
+            <Button
+                android:id="@+id/espacio1413"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0f00"
+                android:layout_toRightOf="@+id/espacio1514" />
+            <Button
+                android:id="@+id/espacio1312"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#00000f"
+                android:layout_toRightOf="@+id/espacio1413" />
+            <Button
+                android:id="@+id/espacio1211"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/espacio1312" />
+            <Button
+                android:id="@+id/espacio1121"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#000fff"
+                android:layout_toRightOf="@+id/espacio1211" />
+            <Button
+                android:id="@+id/espacio2122"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/espacio1121" />
+            <Button
+                android:id="@+id/espacio2223"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ffff00"
+                android:layout_toRightOf="@+id/espacio2122" />
+            <Button
+                android:id="@+id/espacio2324"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/espacio2223" />
+            <Button
+                android:id="@+id/espacio2425"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/espacio2324" />
+            <Button
+                android:id="@+id/espacio2526"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/espacio2425" />
+            <Button
+                android:id="@+id/espacio2627"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/espacio2526" />
+            <Button
+                android:id="@+id/espacio2728"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/espacio2627" />
+          </LinearLayout>
+        </LinearLayout>
+      </HorizontalScrollView>
+      <HorizontalScrollView
           android:layout_width="fill_parent"
-          android:layout_height="fill_parent">
-        <Button
-            android:id="@+id/pieza38"
-            android:text="38"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
-            android:background="#ffffff" />
-        <Button
-            android:id="@+id/pieza37"
-            android:text="37"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ffff00"
-            android:layout_toRightOf="@+id/pieza38" />
-        <Button
-            android:id="@+id/pieza36"
-            android:text="36"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/pieza37" />
-        <Button
-            android:id="@+id/pieza35"
-            android:text="35"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ffffff"
-            android:layout_toRightOf="@+id/pieza36" />
-        <Button
-            android:id="@+id/pieza34"
-            android:text="34"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/pieza35" />
-        <Button
-            android:id="@+id/pieza33"
-            android:text="33"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ffffff"
-            android:layout_toRightOf="@+id/pieza34" />
-        <Button
-            android:id="@+id/pieza32"
-            android:text="32"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/pieza33" />
-        <Button
-            android:id="@+id/pieza31"
-            android:text="31"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ffffff"
-            android:layout_toRightOf="@+id/pieza32" />
-        <Button
-            android:id="@+id/pieza41"
-            android:text="41"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/pieza31" />
-        <Button
-            android:id="@+id/pieza42"
-            android:text="42"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ffff00"
-            android:layout_toRightOf="@+id/pieza41" />
-        <Button
-            android:id="@+id/pieza43"
-            android:text="43"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/pieza42" />
-        <Button
-            android:id="@+id/pieza44"
-            android:text="44"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/pieza43" />
-        <Button
-            android:id="@+id/pieza45"
-            android:text="45"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/pieza44" />
-        <Button
-            android:id="@+id/pieza46"
-            android:text="46"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/pieza45" />
-        <Button
-            android:id="@+id/pieza47"
-            android:text="47"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/pieza46" />
-        <Button
-            android:id="@+id/pieza48"
-            android:text="48"
-            android:layout_width="48dp"
-            android:layout_height="60dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/pieza47" />
-      </LinearLayout>
-      <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <Space
-            android:id="@+id/blankspace2"
-            android:layout_width="24dp"
-            android:layout_height="40dp"/>
-        <Button
-            android:id="@+id/espacio3837"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:layout_alignParentLeft="true"
-            android:background="#ff000f"
-            android:layout_toRightOf="@+id/blankspace2" />
-        <Button
-            android:id="@+id/espacio3736"
-            android:text="17"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ffff0f"
-            android:layout_toRightOf="@+id/espacio3837" />
-        <Button
-            android:id="@+id/espacio3635"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#000000"
-            android:layout_toRightOf="@+id/espacio3736" />
-        <Button
-            android:id="@+id/espacio3534"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ffffff"
-            android:layout_toRightOf="@+id/espacio3635" />
-        <Button
-            android:id="@+id/espacio3433"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ff0f00"
-            android:layout_toRightOf="@+id/espacio3534" />
-        <Button
-            android:id="@+id/espacio3332"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#00000f"
-            android:layout_toRightOf="@+id/espacio3433" />
-        <Button
-            android:id="@+id/espacio3231"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/espacio3332" />
-        <Button
-            android:id="@+id/espacio3141"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#000fff"
-            android:layout_toRightOf="@+id/espacio3231" />
-        <Button
-            android:id="@+id/espacio4142"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/espacio3141" />
-        <Button
-            android:id="@+id/espacio4243"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ffff00"
-            android:layout_toRightOf="@+id/espacio4142" />
-        <Button
-            android:id="@+id/espacio4344"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/espacio4243" />
-        <Button
-            android:id="@+id/espacio4445"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/espacio4344" />
-        <Button
-            android:id="@+id/espacio4546"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/espacio4445" />
-        <Button
-            android:id="@+id/espacio4647"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#0000ff"
-            android:layout_toRightOf="@+id/espacio4546" />
-        <Button
-            android:id="@+id/espacio4748"
-            android:text="ESP"
-            android:layout_width="48dp"
-            android:layout_height="40dp"
-            android:background="#ff0000"
-            android:layout_toRightOf="@+id/espacio4647" />
-      </LinearLayout>
+          android:layout_height="wrap_content"
+          android:id="@+id/upperTempJaw"
+          android:layout_centerHorizontal="true"
+          android:layout_centerInParent="true"
+          android:layout_below="@+id/upperJaw">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/espacioEntreDentalSuperiorTemporal">
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/pieza55"
+                android:text="15"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/pieza16" />
+            <Button
+                android:id="@+id/pieza54"
+                android:text="14"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza15" />
+            <Button
+                android:id="@+id/pieza53"
+                android:text="13"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/pieza14" />
+            <Button
+                android:id="@+id/pieza52"
+                android:text="12"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+idi/pieza13" />
+            <Button
+                android:id="@+id/pieza51"
+                android:text="11"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/pieza12" />
+            <Button
+                android:id="@+id/pieza61"
+                android:text="21"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/pieza11" />
+            <Button
+                android:id="@+id/pieza62"
+                android:text="22"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffff00"
+                android:layout_toRightOf="@+id/pieza21" />
+            <Button
+                android:id="@+id/pieza63"
+                android:text="23"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza22" />
+            <Button
+                android:id="@+id/pieza64"
+                android:text="24"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/pieza23" />
+            <Button
+                android:id="@+id/pieza65"
+                android:text="25"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza24" />
+          </LinearLayout>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/espacioEntreDentalSuperior">
+            <Space
+                android:id="@+id/blankspace3"
+                android:layout_width="24dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/espacio5554"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/blankspace3" />
+            <Button
+                android:id="@+id/espacio5453"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0f00"
+                android:layout_toRightOf="@+id/espacio5554" />
+            <Button
+                android:id="@+id/espacio5352"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#00000f"
+                android:layout_toRightOf="@+id/espacio5453" />
+            <Button
+                android:id="@+id/espacio5251"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/espacio5352" />
+            <Button
+                android:id="@+id/espacio5161"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#000fff"
+                android:layout_toRightOf="@+id/espacio5251" />
+            <Button
+                android:id="@+id/espacio6162"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/espacio5161" />
+            <Button
+                android:id="@+id/espacio6263"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ffff00"
+                android:layout_toRightOf="@+id/espacio6162" />
+            <Button
+                android:id="@+id/espacio6364"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/espacio6263" />
+            <Button
+                android:id="@+id/espacio6465"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/espacio6364" />
+          </LinearLayout>
+        </LinearLayout>
+      </HorizontalScrollView>
+      <HorizontalScrollView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerHorizontal="true"
+          android:id="@+id/underTempJaw"
+          android:layout_below="@+id/upperTempJaw">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/espacioEntreDentalInferiorTemporal">
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+            <Space
+                android:id="@+id/blankspace4"
+                android:layout_width="24dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/espacio8584"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/blankspace4" />
+            <Button
+                android:id="@+id/espacio8483"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0f00"
+                android:layout_toRightOf="@+id/espacio8584" />
+            <Button
+                android:id="@+id/espacio8382"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#00000f"
+                android:layout_toRightOf="@+id/espacio8483" />
+            <Button
+                android:id="@+id/espacio8281"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/espacio8382" />
+            <Button
+                android:id="@+id/espacio7181"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#000fff"
+                android:layout_toRightOf="@+id/espacio8281" />
+            <Button
+                android:id="@+id/espacio7172"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/espacio8171" />
+            <Button
+                android:id="@+id/espacio7273"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ffff00"
+                android:layout_toRightOf="@+id/espacio7172" />
+            <Button
+                android:id="@+id/espacio7374"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/espacio7273" />
+            <Button
+                android:id="@+id/espacio7475"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/espacio7374" />
+          </LinearLayout>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/pieza85"
+                android:text="15"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffffff" />
+            <Button
+                android:id="@+id/pieza84"
+                android:text="14"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza85" />
+            <Button
+                android:id="@+id/pieza83"
+                android:text="13"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/pieza84" />
+            <Button
+                android:id="@+id/pieza82"
+                android:text="12"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+idi/pieza83" />
+            <Button
+                android:id="@+id/pieza81"
+                android:text="11"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/pieza82" />
+            <Button
+                android:id="@+id/pieza71"
+                android:text="21"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/pieza81" />
+            <Button
+                android:id="@+id/pieza72"
+                android:text="22"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffff00"
+                android:layout_toRightOf="@+id/pieza71" />
+            <Button
+                android:id="@+id/pieza73"
+                android:text="23"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza72" />
+            <Button
+                android:id="@+id/pieza74"
+                android:text="24"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/pieza73" />
+            <Button
+                android:id="@+id/pieza75"
+                android:text="25"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza74" />
+          </LinearLayout>
+        </LinearLayout>
+      </HorizontalScrollView>
+      <HorizontalScrollView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:id="@+id/underJaw"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@+id/underTempJaw">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/espacioEntreDentalInferior">
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+            <Space
+                android:id="@+id/blankspace2"
+                android:layout_width="24dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/espacio4847"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:background="#ff000f"
+                android:layout_toRightOf="@+id/blankspace2" />
+            <Button
+                android:id="@+id/espacio4746"
+                android:text="17"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ffff0f"
+                android:layout_toRightOf="@+id/espacio4847" />
+            <Button
+                android:id="@+id/espacio4645"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#000000"
+                android:layout_toRightOf="@+id/espacio4746" />
+            <Button
+                android:id="@+id/espacio4544"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/espacio4645" />
+            <Button
+                android:id="@+id/espacio4443"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0f00"
+                android:layout_toRightOf="@+id/espacio4544" />
+            <Button
+                android:id="@+id/espacio4342"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#00000f"
+                android:layout_toRightOf="@+id/espacio4443" />
+            <Button
+                android:id="@+id/espacio4241"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/espacio4342" />
+            <Button
+                android:id="@+id/espacio4131"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#000fff"
+                android:layout_toRightOf="@+id/espacio4241" />
+            <Button
+                android:id="@+id/espacio3132"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/espacio4131" />
+            <Button
+                android:id="@+id/espacio3233"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ffff00"
+                android:layout_toRightOf="@+id/espacio3132" />
+            <Button
+                android:id="@+id/espacio3334"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/espacio3233" />
+            <Button
+                android:id="@+id/espacio3435"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/espacio3334" />
+            <Button
+                android:id="@+id/espacio3536"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/espacio3435" />
+            <Button
+                android:id="@+id/espacio3637"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/espacio3536" />
+            <Button
+                android:id="@+id/espacio3738"
+                android:text="ESP"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/espacio3637" />
+          </LinearLayout>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/pieza48"
+                android:text="48"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:background="#ffffff" />
+            <Button
+                android:id="@+id/pieza47"
+                android:text="47"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffff00"
+                android:layout_toRightOf="@+id/pieza48" />
+            <Button
+                android:id="@+id/pieza46"
+                android:text="46"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza47" />
+            <Button
+                android:id="@+id/pieza45"
+                android:text="45"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/pieza46" />
+            <Button
+                android:id="@+id/pieza44"
+                android:text="44"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza45" />
+            <Button
+                android:id="@+id/pieza43"
+                android:text="43"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/pieza44" />
+            <Button
+                android:id="@+id/pieza42"
+                android:text="42"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza43" />
+            <Button
+                android:id="@+id/pieza41"
+                android:text="41"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/pieza42" />
+            <Button
+                android:id="@+id/pieza31"
+                android:text="31"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/pieza41" />
+            <Button
+                android:id="@+id/pieza32"
+                android:text="32"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ffff00"
+                android:layout_toRightOf="@+id/pieza31" />
+            <Button
+                android:id="@+id/pieza33"
+                android:text="33"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza32" />
+            <Button
+                android:id="@+id/pieza34"
+                android:text="34"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/pieza33" />
+            <Button
+                android:id="@+id/pieza35"
+                android:text="45"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza34" />
+            <Button
+                android:id="@+id/pieza36"
+                android:text="46"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/pieza35" />
+            <Button
+                android:id="@+id/pieza37"
+                android:text="37"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#ff0000"
+                android:layout_toRightOf="@+id/pieza36" />
+            <Button
+                android:id="@+id/pieza38"
+                android:text="38"
+                android:layout_width="48dp"
+                android:layout_height="60dp"
+                android:background="#0000ff"
+                android:layout_toRightOf="@+id/pieza37" />
+          </LinearLayout>
+        </LinearLayout>
+      </HorizontalScrollView>
     </LinearLayout>
-  </HorizontalScrollView>
+  </ScrollView>
 </RelativeLayout>

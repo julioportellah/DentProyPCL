@@ -23,7 +23,7 @@ namespace DentProy.Droid
             // Create your application here
             SetContentView(Resource.Layout.Odontograma);
             var pieza11 = new Pieza(11);
-            //Declarando botones de la parte superior    
+            //Declarando botones de las piezas dentales    
             var btnPieza11 = (Button)FindViewById(Resource.Id.pieza11);
             var btnPieza12 = (Button)FindViewById(Resource.Id.pieza12);
             var btnPieza13 = (Button)FindViewById(Resource.Id.pieza13);
@@ -56,6 +56,38 @@ namespace DentProy.Droid
             var btnPieza46 = (Button)FindViewById(Resource.Id.pieza46);
             var btnPieza47 = (Button)FindViewById(Resource.Id.pieza47);
             var btnPieza48 = (Button)FindViewById(Resource.Id.pieza48);
+            //Declarando botones de los espacios dentales
+            var btnEspacio1817 = (Button)FindViewById(Resource.Id.espacio1817);
+            var btnEspacio1716 = (Button)FindViewById(Resource.Id.espacio1716);
+            var btnEspacio1615 = (Button)FindViewById(Resource.Id.espacio1615);
+            var btnEspacio1514 = (Button)FindViewById(Resource.Id.espacio1514);
+            var btnEspacio1413 = (Button)FindViewById(Resource.Id.espacio1413);
+            var btnEspacio1312 = (Button)FindViewById(Resource.Id.espacio1312);
+            var btnEspacio1211 = (Button)FindViewById(Resource.Id.espacio1211);
+            var btnEspacio1121 = (Button)FindViewById(Resource.Id.espacio1121);
+            var btnEspacio2122 = (Button)FindViewById(Resource.Id.espacio2122);
+            var btnEspacio2223 = (Button)FindViewById(Resource.Id.espacio2223);
+            var btnEspacio2324 = (Button)FindViewById(Resource.Id.espacio2324);
+            var btnEspacio2425 = (Button)FindViewById(Resource.Id.espacio2425);
+            var btnEspacio2526 = (Button)FindViewById(Resource.Id.espacio2526);
+            var btnEspacio2627 = (Button)FindViewById(Resource.Id.espacio2627);
+            var btnEspacio2728 = (Button)FindViewById(Resource.Id.espacio2728);
+            var btnEspacio3837 = (Button)FindViewById(Resource.Id.espacio3738);
+            var btnEspacio3736 = (Button)FindViewById(Resource.Id.espacio3637);
+            var btnEspacio3635 = (Button)FindViewById(Resource.Id.espacio3536);
+            var btnEspacio3534 = (Button)FindViewById(Resource.Id.espacio3435);
+            var btnEspacio3433 = (Button)FindViewById(Resource.Id.espacio3334);
+            var btnEspacio3332 = (Button)FindViewById(Resource.Id.espacio3233);
+            var btnEspacio3231 = (Button)FindViewById(Resource.Id.espacio3132);
+            var btnEspacio3141 = (Button)FindViewById(Resource.Id.espacio4131);
+            var btnEspacio4142 = (Button)FindViewById(Resource.Id.espacio4241);
+            var btnEspacio4243 = (Button)FindViewById(Resource.Id.espacio4342);
+            var btnEspacio4344 = (Button)FindViewById(Resource.Id.espacio4443);
+            var btnEspacio4445 = (Button)FindViewById(Resource.Id.espacio4544);
+            var btnEspacio4546 = (Button)FindViewById(Resource.Id.espacio4645);
+            var btnEspacio4647 = (Button)FindViewById(Resource.Id.espacio4746);
+            var btnEspacio4748 = (Button)FindViewById(Resource.Id.espacio4847);
+
 
             btnPieza11.SetOnClickListener(this);
             btnPieza12.SetOnClickListener(this);
@@ -89,15 +121,46 @@ namespace DentProy.Droid
             btnPieza46.SetOnClickListener(this);
             btnPieza47.SetOnClickListener(this);
             btnPieza48.SetOnClickListener(this);
+            btnEspacio1817.SetOnClickListener(this);
+            btnEspacio1716.SetOnClickListener(this);
+            btnEspacio1615.SetOnClickListener(this);
+            btnEspacio1514.SetOnClickListener(this);
+            btnEspacio1413.SetOnClickListener(this);
+            btnEspacio1312.SetOnClickListener(this);
+            btnEspacio1211.SetOnClickListener(this);
+            btnEspacio1121.SetOnClickListener(this);
+            btnEspacio2122.SetOnClickListener(this);
+            btnEspacio2223.SetOnClickListener(this);
+            btnEspacio2324.SetOnClickListener(this);
+            btnEspacio2425.SetOnClickListener(this);
+            btnEspacio2526.SetOnClickListener(this);
+            btnEspacio2627.SetOnClickListener(this);
+            btnEspacio2728.SetOnClickListener(this);
+            btnEspacio3837.SetOnClickListener(this);
+            btnEspacio3736.SetOnClickListener(this);
+            btnEspacio3635.SetOnClickListener(this);
+            btnEspacio3534.SetOnClickListener(this);
+            btnEspacio3433.SetOnClickListener(this);
+            btnEspacio3332.SetOnClickListener(this);
+            btnEspacio3231.SetOnClickListener(this);
+            btnEspacio3141.SetOnClickListener(this);
+            btnEspacio4142.SetOnClickListener(this);
+            btnEspacio4243.SetOnClickListener(this);
+            btnEspacio4344.SetOnClickListener(this);
+            btnEspacio4445.SetOnClickListener(this);
+            btnEspacio4546.SetOnClickListener(this);
+            btnEspacio4647.SetOnClickListener(this);
+            btnEspacio4748.SetOnClickListener(this);
         }
         
 
         public void OnClick(View v)
         {
             Toast toast = Toast.MakeText(this, "You Clicked the button..." + v.Id.ToString(), ToastLength.Short);
-            switch (v.Id) {
+            toast.Show();
+            //switch (v.Id) {
 
-            }
+            //}
         }
     }
 }
