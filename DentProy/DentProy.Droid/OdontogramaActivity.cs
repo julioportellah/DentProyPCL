@@ -16,14 +16,92 @@ namespace DentProy.Droid
     [Activity(Label = "OdontogramaActivity")]
     public class OdontogramaActivity : Activity, View.IOnClickListener
     {
+        private int tipoUsuario = 1;//1 es adulto,0 es infante
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            
             // Create your application here
             SetContentView(Resource.Layout.Odontograma);
             var pieza11 = new Pieza(11);
-            //Declarando botones de las piezas dentales    
+            //Declarando botones de las piezas dentales, no olvidar los dientes de leche    
+            DeclararPiezasDentales();
+            DeclararBotonesDeControl();
+            ConfigurarDentadura(tipoUsuario);
+        }
+        
+        private void ConfigurarDentadura(int idPaciente)
+        {
+            if (idPaciente == 1)
+            {
+                var upperTempJaw = (HorizontalScrollView)FindViewById(Resource.Id.upperTempJaw);
+                upperTempJaw.Visibility =ViewStates.Gone;
+                var underTempJaw = (HorizontalScrollView)FindViewById(Resource.Id.underTempJaw);
+                underTempJaw.Visibility = ViewStates.Gone;
+            }
+            if (idPaciente == 0)
+            {
+                var upperJaw = (HorizontalScrollView)FindViewById(Resource.Id.upperJaw);
+                upperJaw.Visibility = ViewStates.Gone;
+                var underJaw = (HorizontalScrollView)FindViewById(Resource.Id.underJaw);
+                underJaw.Visibility = ViewStates.Gone;
+            }
+        }
+
+        public void OnClick(View v)
+        {
+            Toast toast = Toast.MakeText(this, "You Clicked the button..." + v.Id.ToString(), ToastLength.Short);
+            
+            switch (v.Id) {
+                case Resource.Id.LEY01:
+                    toast = Toast.MakeText(this, "Seleccione el diente de inicio y el final..." + v.Id.ToString(), ToastLength.Short);
+                    break;
+                case Resource.Id.LEY02:
+                    toast = Toast.MakeText(this, "Test sin declaracion" + v.Id.ToString(), ToastLength.Short);
+                    break;
+                case Resource.Id.LEY03:
+
+                    break;
+                case Resource.Id.LEY04:
+
+                    break;
+                case Resource.Id.LEY05:
+
+                    break;
+
+            }
+            toast.Show();
+        }
+        #region
+        private void DeclararBotonesDeControl()
+        {
+            var btnLEY01 = (Button)FindViewById(Resource.Id.LEY01);
+            var btnLEY02 = (Button)FindViewById(Resource.Id.LEY02);
+            var btnLEY03 = (Button)FindViewById(Resource.Id.LEY03);
+            var btnLEY04 = (Button)FindViewById(Resource.Id.LEY04);
+            var btnLEY05 = (Button)FindViewById(Resource.Id.LEY05);
+            var btnLEY06 = (Button)FindViewById(Resource.Id.LEY06);
+            var btnLEY07 = (Button)FindViewById(Resource.Id.LEY07);
+            var btnLEY08 = (Button)FindViewById(Resource.Id.LEY08);
+            var btnLEY09 = (Button)FindViewById(Resource.Id.LEY09);
+            var btnLEY10 = (Button)FindViewById(Resource.Id.LEY10);
+            var btnLEY11 = (Button)FindViewById(Resource.Id.LEY11);
+            var btnLEY12 = (Button)FindViewById(Resource.Id.LEY12);
+            btnLEY01.SetOnClickListener(this);
+            btnLEY02.SetOnClickListener(this);
+            btnLEY03.SetOnClickListener(this);
+            btnLEY04.SetOnClickListener(this);
+            btnLEY05.SetOnClickListener(this);
+            btnLEY06.SetOnClickListener(this);
+            btnLEY07.SetOnClickListener(this);
+            btnLEY08.SetOnClickListener(this);
+            btnLEY09.SetOnClickListener(this);
+            btnLEY10.SetOnClickListener(this);
+            btnLEY11.SetOnClickListener(this);
+            btnLEY12.SetOnClickListener(this);
+        }
+        private void DeclararPiezasDentales()
+        {
             var btnPieza11 = (Button)FindViewById(Resource.Id.pieza11);
             var btnPieza12 = (Button)FindViewById(Resource.Id.pieza12);
             var btnPieza13 = (Button)FindViewById(Resource.Id.pieza13);
@@ -151,16 +229,8 @@ namespace DentProy.Droid
             btnEspacio4546.SetOnClickListener(this);
             btnEspacio4647.SetOnClickListener(this);
             btnEspacio4748.SetOnClickListener(this);
-        }
-        
 
-        public void OnClick(View v)
-        {
-            Toast toast = Toast.MakeText(this, "You Clicked the button..." + v.Id.ToString(), ToastLength.Short);
-            toast.Show();
-            //switch (v.Id) {
-
-            //}
         }
+        #endregion
     }
 }
